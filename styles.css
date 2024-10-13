@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff; /* Primary blue color */
+}
+
+.navbar-brand, .nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-size: large;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Hover effect on nav links */
+.nav-link:hover {
+    color: #ffdd57 !important; /* Gold color on hover */
+}
+
+/* Hero Section */
+#home {
+    background-image: url('hero-image.jpg'); /* Add your own hero image */
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 1.25rem;
+}
+
+/* Destination Card Styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* See More / See Less Button */
+#toggleButton {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+}
+
+footer a:hover {
+    color: #ffdd57 !important; /* Gold color on hover */
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination Guide</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Travel Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="p-5 text-center bg-primary text-white">
+        <h1>Explore the World</h1>
+        <p>Discover amazing places to visit around the world</p>
+    </div>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="container py-5">
+        <h2 class="text-center mb-4">Popular Destinations</h2>
+        <div class="row">
+            <!-- First 3 Destination Cards -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="paris.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">Discover the romantic streets of Paris and its iconic landmarks.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="tokyo.jpg" class="card-img-top" alt="Tokyo">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo, Japan</h5>
+                        <p class="card-text">Explore the vibrant streets of Tokyo, a city where tradition meets modernity.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="newyork.jpg" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York, USA</h5>
+                        <p class="card-text">Experience the bustling energy of New York, the city that never sleeps.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Destinations -->
+        <div id="more-destinations" class="row d-none">
+            <!-- Destination 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="sydney.jpg" class="card-img-top" alt="Sydney">
+                    <div class="card-body">
+                        <h5 class="card-title">Sydney, Australia</h5>
+                        <p class="card-text">Visit the famous Sydney Opera House and the stunning beaches of Australia.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destination 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="rome.jpg" class="card-img-top" alt="Rome">
+                    <div class="card-body">
+                        <h5 class="card-title">Rome, Italy</h5>
+                        <p class="card-text">Explore the ancient ruins and breathtaking architecture of Rome.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destination 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="bali.jpg" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonesia</h5>
+                        <p class="card-text">Relax on the beautiful beaches and experience the culture of Bali.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More / See Less Button -->
+        <div class="text-center">
+            <button id="toggleButton" class="btn btn-outline-primary mt-4" onclick="toggleDestinations()">See More</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Travel Guide | All Rights Reserved</p>
+        <a href="#" class="text-white me-2">Privacy Policy</a>
+        <a href="#" class="text-white">Terms of Service</a>
+    </footer>
+
+    <!-- Bootstrap JS and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleDestinations() {
+            var moreDestinations = document.getElementById("more-destinations");
+            var toggleButton = document.getElementById("toggleButton");
+
+            // Toggle visibility of the hidden destinations
+            if (moreDestinations.classList.contains("d-none")) {
+                moreDestinations.classList.remove("d-none");
+                toggleButton.textContent = "See Less";
+            } else {
+                moreDestinations.classList.add("d-none");
+                toggleButton.textContent = "See More";
+            }
+        }
+    </script>
+</body>
+</html>
+
